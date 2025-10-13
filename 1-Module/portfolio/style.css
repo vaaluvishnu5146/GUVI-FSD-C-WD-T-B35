@@ -8,6 +8,13 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(237, 237, 237, 1) 53%,
+    rgba(207, 207, 207, 1) 100%
+  );
 }
 
 h1,

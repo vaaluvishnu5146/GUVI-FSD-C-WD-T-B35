@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradients</title>
+    <style>
+      .swatches-container {
+      }
+
+      .gradient-A {
+        background: #2a7b9b;
+        background: linear-gradient(
+          90deg,
+          rgba(42, 123, 155, 1) 0%,
+          rgba(87, 199, 133, 1) 50%,
+          rgba(237, 221, 83, 1) 100%
+        );
+      }
+
+      .gradient-B {
+        background: #9b2a2a;
+        background: linear-gradient(
+          90deg,
+          rgba(155, 42, 42, 1) 0%,
+          rgba(199, 109, 87, 1) 53%,
+          rgba(237, 124, 83, 1) 100%
+        );
+      }
+
+      button {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swatches-container">
+      <div style="width: 250px; height: 150px" class="gradient-A"></div>
+    </div>
+    <button style="width: 100px; height: 40px" class="gradient-B">
+      Submit
+    </button>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      .content-center {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dotted green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Proerties and values for Position properties</h1>
+    <ul>
+      <li>static (default)</li>
+      <li>relative</li>
+      <li>absolute</li>
+      <li>fixed</li>
+      <li>sticky</li>
+    </ul>
+    <div class="content-center">
+      <p>static</p>
+    </div>
+    <h2>Example for Absolute element inside Relative</h2>
+    <div style="position: relative" class="content-center">
+      <div
+        style="
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          position: absolute;
+          bottom: 30px;
+        "
+      ></div>
+    </div>
+    <h2>Example for Absolute element without relative</h2>
+    <div class="content-center">
+      <div
+        style="
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          position: absolute;
+        "
+      ></div>
+    </div>
+    <h2>Example for Fixed element</h2>
+    <div class="content-center">
+      <div
+        style="
+          width: 150px;
+          height: 150px;
+          position: fixed;
+          right: 50px;
+          bottom: 50px;
+          background-image: url('./guvianime.gif');
+          background-position: center;
+          background-size: contain;
+        "
+      ></div>
+    </div>
+    <h2>Example for Sticky Element</h2>
+    <div class="content-center" style="height: 2000px">
+      <div
+        style="
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          position: sticky;
+          top: 100px;
+        "
+      ></div>
+    </div>
+  </body>
+</html>
