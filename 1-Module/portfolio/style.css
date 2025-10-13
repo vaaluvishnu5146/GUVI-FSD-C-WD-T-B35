@@ -1,0 +1,84 @@
+:root {
+  --primary: rgb(241, 164, 32);
+  --greyText: rgb(138, 138, 138);
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-navigation {
+  width: 5%;
+  > .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    margin-bottom: 10px;
+
+    > img {
+      width: 25px;
+    }
+  }
+}
+
+.image-section {
+  width: 45%;
+  > img {
+    width: 450px;
+  }
+}
+
+.content {
+  width: 50%;
+  > h1 {
+    font-size: 60px;
+    > span {
+      color: var(--primary);
+    }
+  }
+  > p {
+    color: var(--greyText);
+  }
+}
+
+.animated-outline-button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary);
+    color: white;
+    transition: 0.3s;
+  }
+}

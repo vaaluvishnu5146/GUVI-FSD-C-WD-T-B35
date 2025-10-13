@@ -38,3 +38,15 @@ var b = 0;
 do {
   console.log(b);
 } while (b > 1);
+
+// if else inside a loop
+// Print all the even numbers
+for (var i = 1; i <= 10; i++) {
+  isEvenNumber(i);
+}
+
+function isEvenNumber(n) {
+  if (n % 2 == 0) {
+    console.log("Even number === ", i);
+  }
+}
