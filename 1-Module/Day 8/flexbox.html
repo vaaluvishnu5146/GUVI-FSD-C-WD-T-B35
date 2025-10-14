@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .square {
+        width: 100px;
+        height: 100px;
+        background: green;
+      }
+
+      .display-inline-block {
+        display: inline-block;
+      }
+
+      .m-r-10 {
+        margin-right: 10px;
+      }
+
+      .flex-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .bigger-square {
+        width: 400px;
+        height: 400px;
+        border: 2px dashed red;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5px;
+      }
+
+      .rectange {
+        width: 100%;
+        height: 200px;
+        border: 2px dashed green;
+        display: flex;
+      }
+
+      .responsive-square {
+        width: calc((100% - 15px) / 4);
+        height: 100px;
+        background: green;
+      }
+
+      .justify-start {
+        justify-content: start;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .justify-end {
+        justify-content: end;
+      }
+
+      .justify-space-between {
+        justify-content: space-between;
+      }
+
+      .justify-space-evenly {
+        justify-content: space-evenly;
+      }
+
+      .justify-space-around {
+        justify-content: space-around;
+      }
+
+      .align-start {
+        align-items: start;
+      }
+
+      .align-center {
+        align-items: center;
+      }
+
+      .align-end {
+        align-items: end;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example without Flexbox</h1>
+    <div>
+      <div class="square display-inline-block m-r-10">1</div>
+      <div class="square display-inline-block m-r-10">2</div>
+      <div class="square display-inline-block m-r-10">3</div>
+    </div>
+    <h1>Example with Flexbox</h1>
+    <div class="flex-container">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+    </div>
+    <h1>Example with Flexbox (Arrange squares as responsive GRID)</h1>
+    <div class="bigger-square">
+      <div class="responsive-square">1</div>
+      <div class="responsive-square">2</div>
+      <div class="responsive-square">3</div>
+      <div class="responsive-square">1</div>
+      <div class="responsive-square">2</div>
+      <div class="responsive-square">3</div>
+      <div class="responsive-square">1</div>
+      <div class="responsive-square">2</div>
+      <div class="responsive-square">3</div>
+      <div class="responsive-square">1</div>
+      <div class="responsive-square">2</div>
+      <div class="responsive-square">3</div>
+      <div class="responsive-square">3</div>
+      <div class="responsive-square">1</div>
+      <div class="responsive-square">2</div>
+      <div class="responsive-square">3</div>
+    </div>
+    <h1>Understand justify content</h1>
+    <h3>justify-content: flex-start</h3>
+    <div class="rectange justify-start">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-center</h3>
+    <div class="rectange justify-center">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-end</h3>
+    <div class="rectange justify-end">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: space-between</h3>
+    <div class="rectange justify-space-between">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
+      <div class="square">5</div>
+    </div>
+    <h3>justify-content: space-evenly</h3>
+    <div class="rectange justify-space-evenly">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
+      <div class="square">5</div>
+    </div>
+    <h3>justify-content: space-around</h3>
+    <div class="rectange justify-space-around">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
+      <div class="square">5</div>
+    </div>
+    <h1>Understand align items</h1>
+    <h3>justify-content: flex-start</h3>
+    <div class="rectange align-start">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-center</h3>
+    <div class="rectange align-center">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-end</h3>
+    <div class="rectange align-end">
+      <div class="square">1</div>
+    </div>
+
+    <h1>Understand justify and align</h1>
+    <h3>justify-content: flex-start</h3>
+    <div class="rectange justify-start">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-center</h3>
+    <div class="rectange justify-center">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-end</h3>
+    <div class="rectange justify-end">
+      <div class="square">1</div>
+    </div>
+    <h1>Understand align items</h1>
+    <h3>justify-content: flex-start</h3>
+    <div class="rectange align-start">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: flex-center</h3>
+    <div class="rectange align-center">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: center; align-items: center;</h3>
+    <div class="rectange align-center justify-center">
+      <div class="square">1</div>
+    </div>
+    <h3>justify-content: end; align-items: center;</h3>
+    <div class="rectange align-center justify-end">
+      <div class="square">1</div>
+    </div>
+    <h3>flex-direction: flex-row</h3>
+    <div style="flex-direction: row-reverse" class="rectange">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
+    </div>
+    <h3>flex-direction: flex-column</h3>
+    <div style="flex-direction: column-reverse" class="rectange">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
+    </div>
+  </body>
+</html>
