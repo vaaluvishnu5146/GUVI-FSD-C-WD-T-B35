@@ -139,4 +139,27 @@
       }
     }
   }
+
+  .cart_container {
+    flex-direction: column;
+
+    .product_item {
+      height: 100px;
+    }
+
+    .cart_items_listing {
+      width: 100%;
+      margin-bottom: 50px;
+      .cart_product_card {
+        img {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+
+    .cart_total_calculator {
+      width: 100%;
+    }
+  }
 }

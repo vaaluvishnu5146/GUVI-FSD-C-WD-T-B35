@@ -1,0 +1,33 @@
+.mb_5 {
+  margin-bottom: 5px;
+}
+
+.mb_10 {
+  margin-bottom: 10px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+/* GAP */
+.gx_10 {
+  column-gap: 10px;
+}
+
+.gx_20 {
+  column-gap: 20px;
+}
+
+.gx_30 {
+  column-gap: 30px;
+}
+
+/* Text util */
+.text_center {
+  text-align: center;
+}
