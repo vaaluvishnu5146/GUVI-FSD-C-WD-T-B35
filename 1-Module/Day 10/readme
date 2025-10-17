@@ -1,0 +1,6 @@
+Tailwindcss
+
+Offical website: https://tailwindcss.com/
+To use it locally plug this code into body tag:
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

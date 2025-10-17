@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwindcss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./font.css" />
+    <style>
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mb-[20px]">
+      <h1>Button Solid</h1>
+      <div>
+        <button class="w-[100px] h-[40px] rounded bg-green-300 cursor-pointer">
+          Button 1
+        </button>
+        <button class="w-[100px] h-[40px] rounded bg-red-300 cursor-pointer">
+          Button 2
+        </button>
+        <button class="w-[100px] h-[40px] rounded bg-blue-300 cursor-pointer">
+          Button 3
+        </button>
+        <button class="w-[100px] h-[40px] rounded bg-orange-300 cursor-pointer">
+          Button 4
+        </button>
+      </div>
+    </div>
+
+    <div class="mb-[20px]">
+      <h1>Button Outlined</h1>
+      <div>
+        <button
+          class="w-[100px] h-[40px] rounded border-[2px] border-solid border-green-300 cursor-pointer"
+        >
+          Button 1
+        </button>
+        <button
+          class="w-[100px] h-[40px] rounded border-[2px] border-solid border-red-300 cursor-pointer"
+        >
+          Button 2
+        </button>
+        <button
+          class="w-[100px] h-[40px] rounded border-[2px] border-solid border-blue-300 cursor-pointer"
+        >
+          Button 3
+        </button>
+        <button
+          class="w-[100px] h-[40px] rounded border-[2px] border-solid border-orange-300 cursor-pointer"
+        >
+          Button 4
+        </button>
+      </div>
+    </div>
+
+    <h1>Button Icon and Text</h1>
+    <div class="mb-[20px]">
+      <div class="flex">
+        <button
+          class="w-[120px] h-[40px] rounded border-[2px] border-solid border-green-300 cursor-pointer justify-around flex gx-[5px] items-center"
+        >
+          <i class="fa-solid fa-paper-plane text-green-300"></i> Button 1
+        </button>
+        <button
+          class="w-[120px] h-[40px] rounded border-[2px] border-solid border-red-300 cursor-pointer justify-around flex gx-[5px] items-center"
+        >
+          <i class="fa-solid fa-paper-plane text-red-300"></i> Button 2
+        </button>
+        <button
+          class="w-[120px] h-[40px] rounded border-[2px] border-solid border-blue-300 cursor-pointer justify-around flex gx-[5px] items-center"
+        >
+          <i class="fa-solid fa-paper-plane text-blue-300"></i> Button 3
+        </button>
+        <button
+          class="w-[120px] h-[40px] rounded border-[2px] border-solid border-orange-300 cursor-pointer justify-around flex gx-[5px] items-center"
+        >
+          <i class="fa-solid fa-paper-plane text-orange-300"></i> Button 4
+        </button>
+      </div>
+    </div>
+
+    <h1>Button Icon</h1>
+    <div class="mb-[20px]">
+      <div class="flex">
+        <button
+          class="w-[auto] h-[40px] rounded border-[2px] border-solid border-green-300 cursor-pointer justify-around flex gx-[5px] items-center px-[10px]"
+        >
+          <i class="fa-solid fa-paper-plane text-green-300"></i>
+        </button>
+        <button
+          class="w-[auto] h-[40px] rounded border-[2px] border-solid border-red-300 cursor-pointer justify-around flex gx-[5px] items-center px-[10px]"
+        >
+          <i class="fa-solid fa-paper-plane text-red-300"></i>
+        </button>
+        <button
+          class="w-[auto] h-[40px] rounded border-[2px] border-solid border-blue-300 cursor-pointer justify-around flex gx-[5px] items-center px-[10px]"
+        >
+          <i class="fa-solid fa-paper-plane text-blue-300"></i>
+        </button>
+        <button
+          class="w-[auto] h-[40px] rounded border-[2px] border-solid border-orange-300 cursor-pointer justify-around flex gx-[5px] items-center px-[10px]"
+        >
+          <i class="fa-solid fa-paper-plane text-orange-300"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mb-[20px]">
+      <h2 class="mb-5">Text Input</h2>
+      <h1>Text Input</h1>
+      <div class="input">
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Email address</label
+        >
+        <input
+          type="email"
+          id="email"
+          placeholder="you@example.com"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <p class="mt-1 text-xs text-gray-500">
+          We'll never share your email with anyone else.
+        </p>
+      </div>
+      <div class="input mb-[20px]">
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Password</label
+        >
+        <input
+          type="password"
+          id="password"
+          placeholder="***********"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+      <div class="input">
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >DOB</label
+        >
+        <input
+          type="date"
+          id="dob"
+          placeholder="you@example.com"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <p class="mt-1 text-xs text-gray-500">
+          We'll never share your email with anyone else.
+        </p>
+      </div>
+      <div class="input">
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >DOB & Time</label
+        >
+        <input
+          type="datetime-local"
+          id="dob&Time"
+          placeholder="you@example.com"
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+        />
+        <p class="mt-1 text-xs text-gray-500">
+          We'll never share your email with anyone else.
+        </p>
+      </div>
+
+      <h1>Radio Input</h1>
+      <div class="input mb-[20px]">
+        <h2>Radio Small</h2>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="radio"
+            id="female"
+            class="block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="female" class="block text-sm font-medium text-gray-700"
+            >Female</label
+          >
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="radio"
+            id="male"
+            class="block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="male" class="block text-sm font-medium text-gray-700"
+            >Male</label
+          >
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+      <div class="input mb-[20px]">
+        <h2>Radio Medium</h2>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="radio"
+            id="female"
+            class="w-[20px] h-[20px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="female" class="block text-sm font-medium text-gray-700"
+            >Female</label
+          >
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="radio"
+            id="male"
+            class="w-[20px] h-[20px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="male" class="block text-sm font-medium text-gray-700"
+            >Male</label
+          >
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+      <div class="input">
+        <h2>Radio Large</h2>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="radio"
+            id="female"
+            class="w-[35px] h-[35px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="female" class="block text-sm font-medium text-gray-700"
+            >Female</label
+          >
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="radio"
+            id="male"
+            class="w-[35px] h-[35px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="male" class="block text-sm font-medium text-gray-700"
+            >Male</label
+          >
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+
+      <h2>Checkbox</h2>
+      <div class="input mb-[20px]">
+        <h2>Radio Small</h2>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="checkbox"
+            id="female"
+            class="block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="female" class="block text-sm font-medium text-gray-700"
+            >Female</label
+          >
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="checkbox"
+            id="male"
+            class="block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="male" class="block text-sm font-medium text-gray-700"
+            >Male</label
+          >
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+      <div class="input mb-[20px]">
+        <h2>checkbox Medium</h2>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="checkbox"
+            id="female"
+            class="w-[20px] h-[20px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="female" class="block text-sm font-medium text-gray-700"
+            >Female</label
+          >
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="checkbox"
+            id="male"
+            class="w-[20px] h-[20px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="male" class="block text-sm font-medium text-gray-700"
+            >Male</label
+          >
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+      <div class="input">
+        <h2>checkbox Large</h2>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="checkbox"
+            id="female"
+            class="w-[35px] h-[35px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="female" class="block text-sm font-medium text-gray-700"
+            >Female</label
+          >
+        </div>
+        <div class="flex items-center gap-x-[10px]">
+          <input
+            type="checkbox"
+            id="male"
+            class="w-[35px] h-[35px] block p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <label for="male" class="block text-sm font-medium text-gray-700"
+            >Male</label
+          >
+        </div>
+        <p class="mt-1 text-xs text-gray-500">
+          We'll save your password encrypted.
+        </p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
