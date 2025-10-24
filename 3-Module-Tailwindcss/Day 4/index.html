@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./font.css" />
+    <style>
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="h-[80px] w-screen bg-white flex items-center justify-between px-[100px] box-border"
+    >
+      <h1 class="text-cyan-900 text-2xl font-bold">Furniture</h1>
+      <nav class="flex gap-x-[50px]">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Carpenters</a>
+        <a href="#">Products</a>
+        <a href="#">Gallery</a>
+      </nav>
+    </header>
+    <section
+      id="hero"
+      style="height: calc(100vh - 80px)"
+      class="flex w-screen bg-[url(./assets/banner1.png)]"
+    >
+      <div class="w-1/2 h-full"></div>
+      <div class="flex items-center justify-center w-1/2 h-full">
+        <div
+          class="p-[20px] w-2/3 h-auto rounded-lg"
+          style="background-color: #dfe9f4"
+        >
+          <p class="text-sm mb-4 text-zinc-900">New Arival</p>
+          <h2 class="text-4xl font-bold mb-4 text-cyan-900">
+            Discover Our <br />New Collection
+          </h2>
+          <p class="text-sm mb-4 text-zinc-900">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+            Ut elit tellus, luctus nec ullamcorper mattis.
+          </p>
+          <button class="w-[150px] h-[50px] bg-sky-800 rounded-full text-white">
+            BUY NOW
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      id="options"
+      class="grid grid-cols-3 px-[100px] py-[50px] text-sky-800"
+      style="background-color: #dfe9f4"
+    >
+      <div class="flex justify-evenly">
+        <i class="fa-solid fa-truck-ramp-box text-6xl"></i>
+        <div class="flex flex-col justify-between">
+          <h3 class="text-2xl">Free Delivery</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="flex justify-evenly">
+        <i class="fa-solid fa-clock text-6xl"></i>
+        <div class="flex flex-col justify-between">
+          <h3 class="text-2xl">24/7 Support</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="flex justify-evenly">
+        <i class="fa-solid fa-shield-halved text-6xl"></i>
+        <div class="flex flex-col justify-between">
+          <h3 class="text-2xl">100% Authentic</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+    <section id="inspiration_collection" class="px-[100px] py-[50px]">
+      <h2 class="text-center mb-4 font-500 text-2xl">Inspiration Collection</h2>
+      <p class="text-center text-sm text-zinc-900 mb-[50px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="grid grid-cols-3 relative">
+        <div
+          class="bg-[url(./assets/inspiration-1.png)] h-[430px] bg-center bg-no-repeat mt-[30px]"
+        ></div>
+        <div
+          class="bg-[url(./assets/inspiration-2.png)] h-[430px] bg-center bg-no-repeat"
+        ></div>
+        <div
+          class="bg-[url(./assets/inspiration-3.png)] h-[430px] bg-center bg-no-repeat mt-[30px]"
+        ></div>
+      </div>
+    </section>
+    <section
+      id="beautify_section"
+      style="background-color: #dfe9f4"
+      class="grid grid-cols-2 h-screen px-[100px] py-[50px] relative"
+    >
+      <div class="flex flex-col justify-center">
+        <h2 class="text-4xl font-bold mb-4 text-cyan-900">
+          Beautify your space
+        </h2>
+        <p class="text-sm mb-4 text-zinc-900">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+          Ut elit tellus, luctus nec ullamcorper mattis.
+        </p>
+        <button class="w-[150px] h-[50px] bg-sky-800 rounded-full text-white">
+          LEARN MORE
+        </button>
+      </div>
+      <div
+        class="bg-[url(./assets/beautify-image.png)] h-full bg-no-repeat bg-contain z-[1]"
+      ></div>
+      <div
+        class="w-[370px] h-[370px] rounded-full bg-green-900 absolute z-[0] right-[180px] top-[130px]"
+      ></div>
+    </section>
+    <section id="browse_the_range" class="px-[100px] py-[50px] h-screen">
+      <h2 class="text-center mb-4 font-500 text-2xl font-bold">
+        Browse The Range
+      </h2>
+      <p class="text-center text-sm text-zinc-900 mb-[50px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="grid grid-cols-3 relative" style="height: calc(100% - 152px)">
+        <div class="h-full">
+          <div
+            class="bg-[url(./assets/dining.png)] bg-center bg-no-repeat h-full"
+          ></div>
+          <p class="text-center text-xl font-bold">Dining</p>
+        </div>
+        <div class="h-full">
+          <div
+            class="bg-[url(./assets/living.png)] bg-center bg-no-repeat h-full"
+          ></div>
+          <p class="text-center text-xl font-bold">Living</p>
+        </div>
+        <div class="h-full">
+          <div
+            class="bg-[url(./assets/bedroom.png)] bg-center bg-no-repeat h-full"
+          ></div>
+          <p class="text-center text-xl font-bold">Bedroom</p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="mailing_list"
+      class="px-[100px] py-[50px] flex flex-col justify-center items-center"
+      style="background-color: #dfe9f4"
+    >
+      <h2 class="text-xl font-bold mb-3">Join Our Mailing List</h2>
+      <p class="text-sm text-center mb-5">
+        Sign up to receive inspiration, product updates,<br />
+        and special offers from our team.
+      </p>
+      <div class="flex w-[350px] h-[60px] bg-white border border-black">
+        <input class="w-2/3 px-[20px]" placeholder="example@gmail.com" />
+        <button class="w-1/3 bg-sky-800 text-white">Submit</button>
+      </div>
+    </section>
+    <footer
+      class="px-[100px] py-[50px] w-screen h-[300px] bg-sky-800 flex text-white"
+    >
+      <div class="w-[30%]">
+        <h3 class="text-xl mb-3">Beauty Care</h3>
+        <p class="text-sm font-light">
+          Do eiusmod tempor incididunt ut labore et  dolore magna aliqua. Ut
+          enim ad minim veniam,  quis nostrud exercitation ullamco laboris.
+        </p>
+      </div>
+      <div class="w-[10%]"></div>
+      <div class="w-[60%]">
+        <h3 class="text-xl mb-3">Instagram Shop</h3>
+        <div class="grid grid-cols-4">
+          <img src="./assets/IG1.jpg" alt="" /><img
+            src="./assets/IG2.jpg"
+            alt=""
+          /><img src="./assets/IG3.jpg" alt="" /><img
+            src="./assets/IG4.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
