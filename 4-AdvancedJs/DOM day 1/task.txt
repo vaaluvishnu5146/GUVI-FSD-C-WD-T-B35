@@ -1,0 +1,15 @@
+1. Create a H1 tag in html which has text "Good Evening" 
+   change the text to "Good night" of the H1 tag programatically
+
+2. Create a square (div) in html
+   Access the div and provide the width (100px), height (100px), background (red)
+
+3. Add a button to Html, and provide id to the button
+   Access the button in javascript and attach 'click' event listener
+   On click of the button console.log("Hurrah!!")
+
+4. Create a div programattically
+   Add width = 200px
+       height = 100px
+       background = red
+    append the div to document.body
