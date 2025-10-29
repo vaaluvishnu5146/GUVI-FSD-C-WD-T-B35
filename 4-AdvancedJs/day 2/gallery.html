@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="w-screen h-screen bg-zinc-300 flex items-center justify-center">
+        <div class="w-[500px] h-[500px] bg-white rounded flex flex-col gap-y-5 p-3 box-border relative" id="image_gallery">
+            <div class="flex items-center justify-between absolute top-[45%] right-0 left-0 px-5">
+                <button id="prev" class="w-[35px] h-[35px] rounded-full bg-zinc-400 cursor-pointer"><</button>
+                <button id="next" class="w-[35px] h-[35px] rounded-full bg-zinc-400 cursor-pointer">></button>
+            </div>
+            <div class="w-full h-[80%]" id="selected_product_image">
+
+            </div> 
+            <div class="h-[20%] grid grid-cols-6 gap-x-2" id="thumbnails">
+                <div id="1" class="cursor-pointer h-full bg-[url(./assets/1.webp)] bg-contain bg-no-repeat bg-center"></div>
+                <div id="2" class="cursor-pointer h-full bg-[url(./assets/2.webp)] bg-contain bg-no-repeat bg-center"></div>
+                <div id="3" class="cursor-pointer h-full bg-[url(./assets/3.webp)] bg-contain bg-no-repeat bg-center"></div>
+                <div id="4" class="cursor-pointer h-full bg-[url(./assets/4.webp)] bg-contain bg-no-repeat bg-center"></div>
+                <div id="5" class="cursor-pointer h-full bg-[url(./assets/5.webp)] bg-contain bg-no-repeat bg-center"></div>
+                <div id="6" class="cursor-pointer h-full bg-[url(./assets/6.webp)] bg-contain bg-no-repeat bg-center"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./gallery.js"></script>
+  </body>
+</html>
