@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section style="width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <video id="webcamFeed" width="500px" height="400px" style="background-color: aliceblue; margin-bottom: 20px;">
+        </video>
+        <div>
+            <button id="onCam">On Webcam</button>
+            <button id="offCam">Off Webcam</button>
+        </div>
+    </section>
+    <script>
+        const onCamBtn = document.getElementById("onCam");
+        const offCamBtn = document.getElementById("offCam");
+        const videoTag = document.getElementById("webcamFeed");
+
+        let mediaStream = null;
+
+        onCamBtn.addEventListener("click", async function (e) {
+            console.log("On webcam")
+            await getWebCamFeed();
+            playVideo();
+        })
+
+        offCamBtn.addEventListener("click", function (e) {
+            console.log("Off webcam")
+            stopVideo();
+        })
+
+
+        async function getWebCamFeed() {
+            try {
+                mediaStream = await navigator.mediaDevices.getUserMedia({
+                    video: {
+                        width: 500,
+                        height: 400
+                    },
+                    audio: false
+                })
+                setMediaStream(mediaStream)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+
+        function playVideo() {
+            videoTag.play();
+        }
+
+        function stopVideo() {
+            mediaStream.getTracks()[0].stop();
+            setMediaStream(null)
+        }
+
+        function setMediaStream(stream) {
+            videoTag.srcObject = stream;
+        }
+
+    </script>
+</body>
+</html>
