@@ -70,3 +70,56 @@ console.log(sumTwo()); //
 let user = "Vishnu";
 let message = `Good Night, sweet dreams! by ${user} ${new Date().getDate()}`;
 console.log(message);
+
+// Spread operator
+// Operator that helps to unwrap or copy the elements of the array or key-value pairs of the object.
+
+// Copy Array into another array
+const digi = [1, 2, 3, 4, 5];
+const digiCopy = [...digi];
+
+console.log(digi, digiCopy);
+
+// Copy Object into another object
+const userData = {
+  userName: "vishnu",
+  course: "Java Fullstack",
+  experince: 8,
+};
+
+// const customerData = {
+//   userName: userData.userName,
+//   course: userData.course,
+//   experince: userData.experince,
+// };
+
+const customerData = {
+  ...userData,
+};
+
+userData["course"] = "Javascript Fullstack";
+
+// REST Operator
+function sum(a, b, ...c) {
+  let sum = a + b;
+
+  c.forEach((e) => (sum += e));
+
+  return sum;
+}
+
+console.log("Total sum", sum(...digi));
+
+// Destructuring
+// Array Destructuring
+const [input1, input2] = ["Masala Dosa", "Ven pongal"];
+console.log(input1, input2);
+
+// Object Destructuring
+const { userName, course, experince } = {
+  userName: "vishnu",
+  course: "Java Fullstack",
+  experince: 8,
+  city: "Coimbatore",
+};
+console.log(userName, course, experince);

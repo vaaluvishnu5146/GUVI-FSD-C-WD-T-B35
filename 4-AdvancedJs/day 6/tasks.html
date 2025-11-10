@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <style>
+      .square {
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="number"
+      placeholder="Enter mobile number"
+      id="mobileNumber"
+      minlength="10"
+      maxlength="10"
+    />
+
+    <div id="gender_selection">
+      <div>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Male" />
+      </div>
+      <div>
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" />
+      </div>
+      <div>
+        <label for="TransGender">Trans Gender</label>
+        <input type="radio" name="gender" id="TransGender" />
+      </div>
+    </div>
+    <div style="display: flex" class="dragAndDrop">
+      <div
+        style="
+          width: 400px;
+          height: 400px;
+          border: 2px solid blue;
+          display: flex;
+          gap: 5px;
+        "
+        id="containerA"
+      >
+        <div id="1" class="square" draggable="true"></div>
+        <div id="2" class="square" draggable="true"></div>
+        <div id="3" class="square" draggable="true"></div>
+      </div>
+      <div
+        style="width: 400px; height: 400px; border: 2px solid pink"
+        id="containerB"
+      ></div>
+    </div>
+    <script>
+      const mobileNumberInput = document.getElementById("mobileNumber");
+      const genderRadioBtn = document.querySelectorAll(
+        "#gender_selection input[type=radio]"
+      );
+
+      genderRadioBtn.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          console.log(e.target.id);
+        });
+      });
+
+      mobileNumberInput.addEventListener("keyup", function (e) {
+        const inputData = e.target.value;
+        if (e.code == "Enter") {
+          if (inputData.length == 10) console.log("Submitted");
+          else alert("Bad input");
+        }
+      });
+
+      ///  Building Drag and Drop
+      const containerA = document.getElementById("containerA");
+      const containerB = document.getElementById("containerB");
+
+      const squares = containerA.querySelectorAll(".square");
+
+      let squareGettingDraged = null;
+      let squareGettingDraggedParent = null;
+
+      // Attach event listeners to square
+      squares.forEach((element) => {
+        element.addEventListener("dragstart", (e) => {
+          squareGettingDraged = e;
+          squareGettingDraggedParent = e.target.parentElement;
+        });
+        element.addEventListener("dragend", (e) =>
+          console.log(e.target.id, "Drag ended")
+        );
+      });
+
+      // Attach event listeners to containers
+      [containerA, containerB].forEach((e) => {
+        e.addEventListener("dragover", (e) => {
+          console.log(e.target.id, "Drag Over");
+          e.preventDefault();
+        });
+        e.addEventListener("dragenter", (e) =>
+          console.log(e.target.id, "Drag Enter")
+        );
+        e.addEventListener("dragleave", (e) =>
+          console.log(e.target.id, "Drag Leave")
+        );
+        e.addEventListener("drop", (e) => {
+          if (e.target.id !== squareGettingDraged.target.id) {
+            e.target.appendChild(squareGettingDraged.target);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
